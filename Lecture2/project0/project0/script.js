@@ -16,6 +16,7 @@ function newTodo() {
   var button = document.createElement("button");
   button.innerHTML = "Done.";
   button.onClick = function(){
+    console.log("Done!");
     this.parentElement.style.textDecoration = "line-through";
   }
   li.appendChild(document.createTextNode("Todo item #" + todoCount));
